@@ -2,8 +2,6 @@
 
 In the simplest of terms, Ignition is a very basic crowd funding web application — a la Kickstarter. It allows users to create projects, for which others can vote on or pledge time to. It was written for managing internal projects at [BigCommerce](http://www.bigcommerce.com). 
 
-![Ignition Interface](https://p.twimg.com/ArycIJ8CQAE-F_O.png)
-
 ## Why would I want to use it?
 
 Ignition is useful for companies or teams with 20% time, or another variant on the undirected employee time.
