@@ -10,7 +10,7 @@ gem 'devise'
 gem 'bluecloth'
 gem 'gravatar-ultimate'
 gem 'sanitize'
-
+gem 'rails_12factor'
 
 # Gems used only for assets and not required
 # in production environments by default.
