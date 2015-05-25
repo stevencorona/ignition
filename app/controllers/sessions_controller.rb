@@ -7,6 +7,7 @@ class SessionsController < ApplicationController
   def create
     @auth = request.env['omniauth.auth']['credentials']
     @info = request.env['omniauth.auth']['info']
+    
     @user = User.find_or_create_by(email: @info['email'])
 
     @user.name          = @info['name']
@@ -16,5 +17,10 @@ class SessionsController < ApplicationController
     @user.expires_at    = Time.at(@auth['expires_at']).to_datetime
 
     @user.save
+
+    # Bless this session
+    self.current_user = @user
+
+    redirect_to dashboard_path
   end
 end
