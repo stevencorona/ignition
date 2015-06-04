@@ -1,0 +1,14 @@
+<div class="container">
+
+  <% @upcoming.each do |hackathon| %>
+    <%= render partial: "hackathon_box", locals: { hackathon: hackathon } %>
+  <% end %>
+
+  <hr>
+  <h3>Previous Hackathons</h3>
+
+  <% @previous.each do |hackathon| %>
+    <%= render partial: "hackathon_box", locals: { hackathon: hackathon } %>
+  <% end %>
+
+</div>

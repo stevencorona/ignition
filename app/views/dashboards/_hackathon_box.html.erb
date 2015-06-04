@@ -1,0 +1,14 @@
+<div class="row">
+  <div class="hackbox--date col-md-2">
+    <h2><%= hackathon.starting_at.month.to_s %> <%= hackathon.starting_at.day %>-<%= hackathon.ending_at.month %></h2>
+  </div>
+  <div class="hackbox--theme col-md-7">
+    <h1><%= hackathon.theme %></h1>
+    <p><%= hackathon.description %></p>
+  </div>
+
+  <div class="hackbox--join col-md-3">
+    <a class="btn btn-block btn-large"><i class="fa fa-eye">&nbsp;&nbsp;</i>See Prizes</a>
+    <a class="btn btn-block btn-large"><i class="fa fa-users">&nbsp;&nbsp;</i>View Projects</a>
+  </div>
+</div>

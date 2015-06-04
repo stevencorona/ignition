@@ -22,6 +22,13 @@ gem 'dotenv'
 gem 'omniauth'
 gem 'omniauth-google-oauth2'
 
+# Bootstrap
+gem 'bootstrap-sass', '~> 3.3.4'
+gem 'font-awesome-sass'
+
+# Admin
+gem 'activeadmin', github: 'activeadmin'
+
 # Development
 group :development, :test do
   gem 'byebug'
